@@ -24,7 +24,8 @@ jobs:
       - name: Release
         uses: cycjimmy/semantic-release-action@v4
         with:
-          semantic_version: 23.0.2
+          branches: |
+            [ 'main' ]
           extra_plugins: |
             @semantic-release/git
             @semantic-release/github
